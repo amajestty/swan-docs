@@ -1,0 +1,59 @@
+.background-image {
+  background-image: url('../assets/images/background.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Ajuste para dispositivos menores */
+@media (max-width: 750px) {
+  .background-image {
+    background-size: auto 100%;
+    background-position: 75%;
+    height: 100vh;
+  }
+} 
+
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+  padding-left: 20px;
+}
+
+.content-wrapper h1 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.content-wrapper p {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.content-wrapper .md-button {
+  display: inline-block;
+  padding: 10px 50px;
+  font-size: 1rem;
+  color: #000000;
+  background-color: #3e9fc0;
+  border: 2px solid #132635;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.content-wrapper .md-button:hover {
+  background-color: #0e151d;
+  color: #ffffff;
+  border: 2px solid #3e9fc0;
+}
+
+.md-content h1 {
+  padding-top: 20px;
+  margin: 0;
+}
